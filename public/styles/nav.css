@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 1.5em;
+  z-index: 1;
+  
+}
+
+.tweeter-header {
+  font-family: 'Bungee', cursive;
+}
+
+.write-tweet {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.submit-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fas {
+  color: red;
+  padding: 7%;
+}
