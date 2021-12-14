@@ -21,20 +21,11 @@ body {
   align-items: center;
   background-color: #f5e285;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   color: #545149;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container {
-  background-color: #f5e285;
-background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  width: 90%;
-  text-align: center;
-
-}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
