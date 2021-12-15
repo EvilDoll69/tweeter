@@ -45,7 +45,7 @@
       </div>            
     </nav>
     <!--HEADER-->
-    <header>
+    <header class="main-header">
       <div class="avatar" >
           <img src="/images/profile-hex.png"> 
       </div>
@@ -68,17 +68,81 @@
           </div>
         </form>
       </section> 
+
       <!--New TWEET-->
-      <section class="new-tweet">
-        <h2 class="post-header">Compose Tweet</h2>
-        <form class = "tweet-input" method="POST" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label> <br>
-          <textarea class="input-tweet" name="text" id="tweet-text"></textarea>
-          <div class="submit-count">
-            <button class="btn" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
+      <section class="posted-tweet">
+        <header class="post-header">
+          <div class="post-icon">
+            <img class="post-icon-img" src="https://i.imgur.com/73hZDYK.png" alt="icon">
+            <p>Newton</p>
+          </div>              
+          <h4 class="post-header nickname">@SirIsaak</h4>
+        </header>
+        
+        <form class = "tweet-input" method="POST" action="/tweets/"><br>
+          <article class="input-tweet" name="text" id="tweet-text">Lorem Ipsum is simply 
+            dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text</article>
+          </form>
+            
+          <footer class="footer">
+            <p class="days-on-site">10 days ago</p>
+            <div class="post-reactions">
+              <i class="icon fas fa-flag"></i>
+              <i class="icon fas fa-retweet"></i>
+              <i class="icon fas fa-heart"></i>
+            </div>            
+          </footer>        
+      </section> 
+
+      <section class="posted-tweet">
+        <header class="post-header">
+          <div class="post-icon">
+            <img class="post-icon-img" src="https://i.imgur.com/lRUnDgU.png" alt="icon">
+            <p>Madonna</p>
+          </div>              
+          <h4 class="post-header nickname">@Maddy</h4>
+        </header>
+        
+        <form class = "tweet-input" method="POST" action="/tweets/"><br>
+          <article class="input-tweet" name="text" id="tweet-text">Lorem Ipsum is simply 
+            dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text</article>
+          </form>
+            
+          <footer class="footer">
+            <p class="days-on-site">12 days ago</p>
+            <div class="post-reactions">
+              <i class="icon fas fa-flag"></i>
+              <i class="icon fas fa-retweet"></i>
+              <i class="icon fas fa-heart"></i>
+            </div>            
+          </footer>        
+      </section> 
+
+      <section class="posted-tweet">
+        <header class="post-header">
+          <div class="post-icon">
+            <img class="post-icon-img" src="https://i.imgur.com/v0JXau2.png" alt="icon">
+            <p>Darth Vader</p>
+          </div>              
+          <h4 class="post-header nickname">@Darty</h4>
+        </header>
+        
+        <form class = "tweet-input" method="POST" action="/tweets/"><br>
+          <article class="input-tweet" name="text" id="tweet-text">Lorem Ipsum is simply 
+            dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text</article>
+          </form>
+            
+          <footer class="footer">
+            <p class="days-on-site">15 days ago</p>
+            <div class="post-reactions">
+              <i class="icon fas fa-flag"></i>
+              <i class="icon fas fa-retweet"></i>
+              <i class="icon fas fa-heart"></i>
+            </div>            
+          </footer>        
       </section> 
 
     </main>
