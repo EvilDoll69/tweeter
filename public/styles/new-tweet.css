@@ -36,6 +36,9 @@ footer {
   width: 90%;
   z-index: 1;
 }
+.name {
+  margin-left: 15px;
+}
 .nickname {
   color: grey;
 }
@@ -70,7 +73,7 @@ footer {
   margin: 20px 0;
   padding: 10px;
 }
-.posted-tweet {
+#posted-tweet {
   border: solid grey 3px;
   display: flex;
   flex-direction: column;
@@ -78,7 +81,7 @@ footer {
   padding: 10px;
   border-radius: 5px;
 }
-.posted-tweet:hover {
+#posted-tweet:hover {
   box-shadow: 5px 10px #888888; 
   transition: 1s;
   
