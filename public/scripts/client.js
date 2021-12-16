@@ -14,6 +14,7 @@ $('document').ready(function(){
       data: $(this).serialize(), //input object from the form
       success: function(tweet) {
         $("#tweet-text").val("");
+        loadTweets();
       }
    });
 
