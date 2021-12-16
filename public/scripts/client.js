@@ -5,7 +5,7 @@
  */
 $('document').ready(function(){
 
-  $(".tweet-input").submit(function(event) {
+  $(".tweet-input-form").submit(function(event) {
     event.preventDefault();
 
     
@@ -78,8 +78,8 @@ loadTweets();
           <h4 class="post-header nickname">${escape(tweet.user.handle)}</h4>
         </header>
         
-        <form class = "tweet-input" method="POST" action="/tweets/"><br>
-          <article class="input-tweet" name="text" id="tweet-text">${escape(tweet.content.text)}</article>
+        <form class = "tweet-input-form" method="POST" action="/tweets/"><br>
+          <article class="input-tweet-article" name="text" id="tweet-text">${escape(tweet.content.text)}</article>
           </form>
             
           <footer class="footer">

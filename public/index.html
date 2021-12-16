@@ -46,6 +46,7 @@
         <i class="fas fa-angle-double-down"></i>
       </div>            
     </nav>
+
     <!--HEADER-->
     <header class="main-header">
       <div class="avatar" >
@@ -61,10 +62,10 @@
     <main class="container">
       <section class="new-tweet">
         <h2 class="post-header">Compose Tweet</h2>
-        <form class = "tweet-input" method="POST" action="/tweets/">
+        <form class = "tweet-input-form" method="POST" action="/tweets/">
           <label for="tweet-text">What are you humming about?</label> <br>
           <div class="error-message"></div>
-          <textarea class="input-tweet" name="text" id="tweet-text"></textarea>
+          <textarea class="input-tweet-article" name="text" id="tweet-text"></textarea>
           <div class="submit-count">
             <button class="btn" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -75,8 +76,6 @@
       <!--New TWEET-->
        <section id="posted-tweets"></section>
 
-    </main>
-
-    
+    </main>    
   </body>
 </html>

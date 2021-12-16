@@ -12,15 +12,12 @@ nav {
   z-index: 2;  
   
 }
-
 .tweeter-header {
   font-family: 'Bungee', cursive;
 }
-
 .write-tweet {
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 .submit-tweet {
   display: flex;
   flex-direction: column;

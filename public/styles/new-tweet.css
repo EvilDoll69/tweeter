@@ -1,23 +1,79 @@
+/*---------MAIN----------------*/
+.container {
+  background-color: #f5f4eb;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  width: 90%;
+  z-index: 1;
+}
+
+#posted-tweet {
+  border: solid grey 3px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+#posted-tweet:hover {
+  box-shadow: 5px 10px #888888; 
+  transition: 1s;  
+}
+
+/* ------ HEADER -------*/
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f4eb;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
 label {
   margin: 0;
   width: 100%;
 }
-
-footer {
+.post-icon {
   display: flex;
-  justify-content: space-between;
-
 }
 
-.input-tweet {
+.name {
+  margin-left: 15px;
+}
+
+.nickname {
+  color: grey;
+}
+
+/*-------------TWEET COMPOSITION----------*/
+.tweet-input-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.error-message {
+  background-color: #ff0000;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  color: white;
+  border: solid 3px black;
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: bold;
+  text-align: center;
+  visibility: hidden;
+}
+.input-tweet-article {
   width: 100%;
   border-style: none;
   border-bottom: outset;
   background-color: #f5f4eb;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-
 }
 
+/*-------------------FOOTER---------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+
+}
 .btn {
   color: #FFFFFF;
   background-color: #4056A1;
@@ -30,44 +86,16 @@ footer {
   font-weight: bold;
 }
 
-.error-message {
-  background-color: #ff0000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  color: white;
-  border: solid 3px black;
-  border-radius: 5px;
-  padding: 7px;
-  font-weight: bold;
-  text-align: center;
-  visibility: hidden;
-}
 
-.container {
-  background-color: #f5f4eb;
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-  width: 90%;
-  z-index: 1;
-}
-.name {
-  margin-left: 15px;
-}
-.nickname {
-  color: grey;
-}
 
-.post-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f4eb;
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-}
 
-.post-icon {
-  display: flex;
-}
-.post-icon-img {
-  margin: 5px;
-}
+
+
+
+
+
+
+
 .post-reactions {
   margin: 24px 0 24px 24px;
 }
@@ -85,18 +113,7 @@ footer {
   margin: 20px 0;
   padding: 10px;
 }
-#posted-tweet {
-  border: solid grey 3px;
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0;
-  padding: 10px;
-  border-radius: 5px;
-}
-#posted-tweet:hover {
-  box-shadow: 5px 10px #888888; 
-  transition: 1s;  
-}
+
 
 .post-header {
   margin: 15px 0 ;
@@ -109,8 +126,3 @@ footer {
   justify-content: space-between;
 }
 
-.tweet-input {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
