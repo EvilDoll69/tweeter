@@ -5,9 +5,20 @@
  */
 $('document').ready(function(){
 
-  $("#posted-tweets").submit(function() {
-    preventDefault();
+   $(".tweet-input").submit(function(event) {
+    event.preventDefault();
+
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8080/tweets/",
+      data: $(this).serialize(), //input object from the form
+      success: function(tweet) {
+        console.log("WOW!")
+      }
+    });
   });
+
+  
 
   const tweets = [
     {
@@ -85,9 +96,9 @@ $('document').ready(function(){
 
 });
 
-$("#posted-tweets").submit(function( event ) {
-  alert( "Handler for .submit() called." );
-  event.preventDefault();
-});
+// $("#posted-tweets").submit(function( event ) {
+//   alert( "Handler for .submit() called." );
+//   event.preventDefault();
+// });
 
 
