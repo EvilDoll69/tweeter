@@ -26,6 +26,7 @@
   justify-content: space-between;
   background-color: #f5f4eb;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  margin: 15px 0;
 }
 label {
   margin: 0;
@@ -43,7 +44,14 @@ label {
   color: grey;
 }
 
+
 /*-------------TWEET COMPOSITION----------*/
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 10px;
+}
 .tweet-input-form {
   display: flex;
   flex-direction: column;
@@ -85,21 +93,9 @@ footer {
   font-size: 20px;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
 .post-reactions {
   margin: 24px 0 24px 24px;
 }
-
 .icon {
   color: #4056A1;
   margin: 0 10px;
@@ -107,18 +103,6 @@ footer {
 .icon:hover {
   color: #ECB365;
 }
-.new-tweet {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
-  padding: 10px;
-}
-
-
-.post-header {
-  margin: 15px 0 ;
-}
-
 .submit-count {
   font-family: 'Bungee', cursive;
   margin: 15px 0;
