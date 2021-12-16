@@ -8,6 +8,8 @@ $(".input-tweet").keyup( function () {
 
   if ($(this).val().length > 140) {
     $counter.css("color", "red");
+  } else {
+    $counter.css("color", "#4056A1")
   }
 
 });

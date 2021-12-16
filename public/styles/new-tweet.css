@@ -30,6 +30,18 @@ footer {
   font-weight: bold;
 }
 
+.error-message {
+  background-color: #ff0000;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  color: white;
+  border: solid 3px black;
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: bold;
+  text-align: center;
+  visibility: hidden;
+}
+
 .container {
   background-color: #f5f4eb;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
@@ -83,9 +95,7 @@ footer {
 }
 #posted-tweet:hover {
   box-shadow: 5px 10px #888888; 
-  transition: 1s;
-  
-  
+  transition: 1s;  
 }
 
 .post-header {

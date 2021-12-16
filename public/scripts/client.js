@@ -8,25 +8,34 @@ $('document').ready(function(){
   $(".tweet-input").submit(function(event) {
     event.preventDefault();
 
-    $.ajax({
-      type: "POST",
-      url: "http://localhost:8080/tweets/",
-      data: $(this).serialize(), //input object from the form
-      success: function(tweet) {
-        $("#tweet-text").val("");
-        loadTweets();
-      }
-   });
-
+    
    if ($("#tweet-text").val() === null || $("textarea").val() === "") {
-    // $(".error").text("ERROR: Please input some text");
-    alert ("You have to input some text!")
+    $(".error-message").css("visibility", "visible").text("⚠️ ERROR: Please input some text ⚠️");
+    return;
+   } else {
+    $(".error-message").css("visibility", "hidden");
    };
+
 
    if ($("#tweet-text").val().length > 140) {
-    // $(".error").text("ERROR: Please input some text");
-    alert ("You have reached your tweet limit")
+    $(".error-message").css("visibility", "visible").text("⚠️ ERROR: You have exceeded allowable letter limit ⚠️");
+    return;
+   } else {
+    $(".error-message").css("visibility", "hidden");    
    };
+
+   $.ajax({
+    type: "POST",
+    url: "http://localhost:8080/tweets/",
+    data: $(this).serialize(), //input object from the form
+    success: function(tweet) {
+      $("#tweet-text").val("");
+      loadTweets();
+    }    
+ });
+
+  const $counter = $(this).find('.counter');// convention JQuery
+  $counter.val(140);
 
   });
 
@@ -52,19 +61,25 @@ loadTweets();
   const createTweetElement = function(tweet) {
     const timePassed = timeago.format(tweet.created_at);
 
+    const escape = function (str) {
+      let div = document.createElement("div");
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    };  
+
     let $tweet = (`
 
     <section id="posted-tweet">
         <header class="post-header">
           <div class="post-icon">
             <img src = ${tweet.user.avatars}/>
-            <p class="name">${tweet.user.name}</p>
+            <p class="name">${(tweet.user.name)}</p>
           </div>              
-          <h4 class="post-header nickname">${tweet.user.handle}</h4>
+          <h4 class="post-header nickname">${escape(tweet.user.handle)}</h4>
         </header>
         
         <form class = "tweet-input" method="POST" action="/tweets/"><br>
-          <article class="input-tweet" name="text" id="tweet-text">${tweet.content.text}</article>
+          <article class="input-tweet" name="text" id="tweet-text">${escape(tweet.content.text)}</article>
           </form>
             
           <footer class="footer">
@@ -81,19 +96,6 @@ loadTweets();
       return $tweet;  // return tweet <section> element containing the entire HTML structure of the tweet  
 };
 
-  
-    // const $tweet = createTweetElement(tweet);
-    // console.log($tweet);  
-    
-    // $('#posted-tweets').append($tweet); // to add it to the page  
-
-  // renderTweets(tweets);
 
 });
-
-// $("#posted-tweets").submit(function( event ) {
-//   alert( "Handler for .submit() called." );
-//   event.preventDefault();
-// });
-
 
