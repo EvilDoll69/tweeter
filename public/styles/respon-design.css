@@ -1,18 +1,17 @@
 @media only screen and (min-width: 1024px) {
   nav {
-    background-color: #4056A1;
-    color: #FFFFFF;    
+    background-color: #4056a1;
+    color: #ffffff;
   }
   .main-header-posted-tweets {
     display: flex;
     justify-content: space-between;
     margin-top: 200px;
     width: 100%;
-    /* flex-wrap: wrap; */
   }
 
   .main-header {
-    margin: 50px 60px 0 100px;  
+    margin: 50px 60px 0 100px;
     width: 65%;
     border-radius: 7px;
   }
@@ -21,8 +20,8 @@
     margin: 0 60px 0 60px;
     padding-top: 0;
     width: 90%;
-  }  
+  }
   #posted-tweets {
     width: 90%;
   }
-} 
+}

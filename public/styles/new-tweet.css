@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 #posted-tweet {
@@ -22,8 +21,8 @@
   width: 90%;
 }
 #posted-tweet:hover {
-  box-shadow: 5px 10px #888888; 
-  transition: 1s;  
+  box-shadow: 5px 10px #888888;
+  transition: 1s;
 }
 
 /* ------ HEADER -------*/
@@ -51,7 +50,6 @@ label {
   color: grey;
 }
 
-
 /*-------------TWEET COMPOSITION----------*/
 .new-tweet {
   display: flex;
@@ -76,7 +74,7 @@ label {
   text-align: center;
   visibility: hidden;
 }
- 
+
 #tweet-text {
   max-width: 800px;
   border-style: none;
@@ -89,11 +87,10 @@ label {
 footer {
   display: flex;
   justify-content: space-between;
-
 }
 .btn {
-  color: #FFFFFF;
-  background-color: #4056A1;
+  color: #ffffff;
+  background-color: #4056a1;
   padding: 10px;
   border-radius: 3px;
   border-style: none;
@@ -106,16 +103,15 @@ footer {
   margin: 24px 0 24px 24px;
 }
 .icon {
-  color: #4056A1;
+  color: #4056a1;
   margin: 0 10px;
 }
 .icon:hover {
-  color: #ECB365;
+  color: #ecb365;
 }
 .submit-count {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
 }
-
