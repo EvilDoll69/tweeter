@@ -1,16 +1,21 @@
 /*---------MAIN----------------*/
-.container {
+.container-for-tweets {
   background-color: #f5f4eb;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   width: 90%;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 #posted-tweet {
   border: solid grey 3px;
   display: flex;
   flex-direction: column;
-  margin: 30px 0;
+  margin-left: 30px;
+  margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;
 }
@@ -51,6 +56,7 @@ label {
   flex-direction: column;
   margin: 20px 0;
   padding: 10px;
+  width: 90%;
 }
 .tweet-input-form {
   display: flex;
@@ -74,6 +80,7 @@ label {
   border-bottom: outset;
   background-color: #f5f4eb;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  overflow-wrap: break-word;
 }
 
 /*-------------------FOOTER---------------------*/
