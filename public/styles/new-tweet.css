@@ -74,15 +74,15 @@ label {
   text-align: center;
   visibility: hidden;
 }
-.input-tweet-article {
-  width: 100%;
+ 
+#tweet-text {
+  max-width: 800px;
   border-style: none;
   border-bottom: outset;
   background-color: #f5f4eb;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   overflow-wrap: break-word;
 }
-
 /*-------------------FOOTER---------------------*/
 footer {
   display: flex;
