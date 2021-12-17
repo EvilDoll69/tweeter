@@ -1,8 +1,26 @@
-# Tweeter Project
+# Tweeter single-page project
 
-Tweeter is a simple, single-page Twitter clone.
+### Key Functionalities:
+- UI/UX elements like: the Character Counter with the reset functionality, the input area, appropriate error messages. 
+- The form data/user input is validated on the client side using jQuery and posted to the server using an AJAX call.
+- The tweets are refetched on submission and dynamically sent to DOM without requiring a page refresh.
+- The application is tested to prevent cross-site scripting(XSS).
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+
+##  Project Screenshots
+
+* [Tweeter - Start](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Start%20tweeting.png)
+
+* [Tweeter - Error Message: if the text area is empty and tweet button is clicked](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Empty%20tweet%20Error%20message.png)
+
+![Tweeter - Error message: character overlimit](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Exceeded%20Limit%20Error%20message.png)
+
+* [Posted tweets appearance](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Tweets%20appearance.png)
+
+![Tweeter - Small device appearance](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Small%20device%20appearance.png)
+
+* [Tweeter - the Character Counter indicates the overlimit](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/the%20Character%20Counter%20indicates%20overlimit.png)
+
 
 ## Getting Started
 
