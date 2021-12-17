@@ -9,7 +9,7 @@
 
 ##  Project Screenshots
 
-![Tweeter - Start](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Start%20tweeting%20copy.png)
+![Tweeter - Start](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Start%20tweeting.png)
 
 ![Tweeter - Error Message: if the text area is empty and tweet button is clicked](https://github.com/EvilDoll69/tweeter/blob/master/screenshots/Empty%20tweet%20Error%20message.png)
 
