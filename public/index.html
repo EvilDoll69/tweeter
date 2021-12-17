@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/respon-design.css" type="text/css"/>
 
     <!--Font AWESOME/ TIMEAGO-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -35,6 +36,9 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type = "text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Disable viewport zooming-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
@@ -48,7 +52,8 @@
     </nav>
 
     <!--HEADER-->
-    <header class="main-header">
+    <div class="transformation row">
+    <header class="main-header col-lg-6 col-md-12">
       <div class="avatar" >
           <img src="/images/profile-hex.png"> 
       </div>
@@ -59,7 +64,7 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="container col-lg-6 col-md-12">
       <section class="new-tweet">
         <h2 class="post-header">Compose Tweet</h2>
         <form class = "tweet-input-form" method="POST" action="/tweets/">
@@ -76,6 +81,7 @@
       <!--New TWEET-->
        <section id="posted-tweets"></section>
 
-    </main>    
+    </main>   
+  </div> 
   </body>
 </html>
